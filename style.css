@@ -1,0 +1,349 @@
+:root{
+    --color-primario: #087DC0;
+    --color-secundario: #ffc222;
+    --color-terciario: #f2f2f2;
+    --color-cuaternario: rgb(0, 0, 0);
+    --color-quinario: white;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+header .menu ul li {
+    display: inline;
+
+}
+
+header .logotipo_uno {
+    width: 25%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 12px 20px 0px #f2f2f2;
+    margin-top: 12px;
+    padding: 35px;
+    background-color: var(--color-primario);
+}
+
+.contenido_menu ul li{
+    margin: 40px;
+    font-size: 20px;
+}
+
+.contenido_menu ul li a {
+    color: var(--color-cuaternario);
+}
+
+.contenido_menu ul li a:hover {
+    color: var(--color-secundario);
+    border-bottom: 2px solid var(--color-secundario);
+}
+
+.contenedor_marca {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 50px;
+    justify-content: space-around;
+}
+
+.informacion_marca {
+    width: 40%;
+    height: auto;
+    font-size: 30px;
+}
+
+
+.icono_de_marca {
+    width: 20%;
+    height: auto;
+}
+
+.contenedor_marca p {
+    color: var(--color-cuaternario);
+}
+
+.contenedor_marca h1 {
+    color: var(--color-secundario);
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.contenedor_logos {
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 180px 50px 180px;
+}
+
+.contenedor_logos h1{
+    color: var(--color-primario);
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.clases_logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.contenedor_logos img {
+    width: auto;
+    height: 80px;
+    text-align: center
+}
+
+.contenedor_logos p {
+    color: var(--color-quinario);
+    font-size: 30px;
+}
+
+.logo_1 {
+    background-color: var(--color-cuaternario);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.logo_2 {
+    background-color:var(--color-quinario);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.logo_3 {
+    background-color: var(--color-cuaternario);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+footer {
+    background-color: var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.vinculos {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.redes_sociales {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+footer ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+
+}
+
+footer ul li a{
+    color:var(--color-primario);
+}
+
+footer ul li a:hover{
+    color: var(--color-cuaternario);
+    border-bottom: 2px solid var(--color-quinario);
+}
+
+b {
+    color: var(--color-secundario);
+}
+
+b:hover {
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-primario);
+}
+
+.redes_sociales ul li{
+    display: inline;
+    margin: 30px;
+    font-size:50px;
+}
+
+ /* ##Dispositivo = Smartphones de 320px a 479px */
+ @media (min-width: 320px) and (max-width: 480px){
+
+    header .logotipo_uno {
+        width: 500%;
+     
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 12px 20px 0px #f2f2f2;
+        background-color: var(--color-primario);
+        width: 245px;
+       
+    }
+    
+    .contenido_menu ul li{
+        margin: 5px;
+        font-size: 0.7em;
+        padding-right: 50px;
+      
+        
+    }
+    
+    .contenido_menu ul li a{
+        color: white;
+        margin-left: 10px;
+        
+    }
+    .informacion_marca {
+        width:245px;
+        height: auto;
+        font-size: 0.96em;
+        
+      
+    }
+
+    .contenedor_marca {
+        justify-content: center; 
+        align-items: center;
+        margin: 20px;
+        flex-direction: column;
+    }
+    
+    .icono_de_marca {
+        width: 70%;
+        height: auto;
+      
+        margin-top:  25px;
+    }
+
+    .contenedor_logos {
+        background-color: var(--color-secundario) ;
+        flex-direction: column;
+        width: 275px;
+        
+        padding: 20px;
+    }
+    
+    .contenedor_logos h1{
+        color: var(--color-primario);
+        font-size: 1.9em;
+        font-weight: 900;
+      
+         }
+    .contenedor_logos p{
+        font-size: 1em;
+
+
+         }
+    .clases_logos {
+     display: flex;
+     margin: 15px;
+     flex-direction: column;
+     
+        }
+    .clases_logos img{
+        width: 100%;
+            
+               }
+    
+        .logo_1 {
+            background-color: var(--color-cuaternario);
+            border-radius: 10px;
+            padding: 3px 8px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        }
+        
+        .logo_2 {
+            background-color:var(--color-quinario);
+            border-radius: 10px;
+            padding: 3px 8px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .logo_3 {
+            background-color: var(--color-cuaternario);
+            border-radius: 10px;
+            padding: 3px 8px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        }
+    footer {
+            background-color: var(--color-terciario);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           flex-direction: column;
+            padding: 50px;
+        }
+     .redes_sociales {
+            width: 50%;
+            justify-content: space-between;
+            display: inline;
+            margin: 10px;
+           
+            
+        }
+    .redes_sociales ul{
+        justify-content: space-between;
+        display: inline;
+         }
+
+ .vinculos {
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+           
+            
+        }
+
+        
+    
+   
+    
+
+
+ }
+
+
+ /* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    
+
+
+}
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+
+}
